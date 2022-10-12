@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rebeccapurple;
+    z-index: 99;
+    animation: a 2s ease-in 4s both;
+}
+
+#overlay h2{
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    animation: c 2s ease-in-out 2.5s both;
+}
+
+#overlay #line1{
+    position: absolute;
+    left: 20%;
+    width: 2px;
+    height: 0%;
+    background-color: white;
+    animation: b 2s ease-out 1s both;
+}
+
+
+#overlay #line2{
+    position: absolute;
+    right: 20%;
+    width: 2px;
+    height: 0%;
+    background-color: white;
+    bottom: 0%;
+    animation: b 2s ease-out 1s both;
+} 
+
+#main{
+    width: 100%;
+    background-color: #e7f4f8;
+}
+
+#text{
+    width: 100%;
+    min-height: 130vh;
+    background-color: #e7f4f8;
+}
+
+#text h1{
+    font-size: 50px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: d 1s ease-in 6s both;
+}
+#text h5{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: e 1s ease-in 7s both;
+}
+
+
+#text img{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 0);
+    animation: f 1s ease-in 8s both;
+}
+
+
+@keyframes a{
+    from{transform: translateY(0);}
+    to{transform: translateY(-100%);}
+}
+
+@keyframes b{
+    from{height: 0%;}
+    to{
+        height: 100%;
+    }
+}
+
+@keyframes c{
+    from{opacity: 0;}
+    to{opacity: .7;}
+}
+
+@keyframes d{
+    from{top: 45%;}
+    to{top: 35%;}
+}
+@keyframes e{
+    from{top: 55%;}
+    to{top: 48%;}
+}
+
+@keyframes f {
+    from{top: 60%;}
+    to{top: 53%;}
+}
